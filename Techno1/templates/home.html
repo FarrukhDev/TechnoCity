@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <img src="{% static 'image/ismsiz.png' %}"> <a href="home.html" class="logo"><h6>TECHNOCITY</h6> </a>
+
+    <form action="" class="search-form">
+    </form>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+    </div>
+
+</header>
+
+<!-- header section ends  -->
+
+<!-- closer btn  -->
+
+<div id="closer" class="fas fa-times"></div>
+
+<!-- navbar  -->
+
+<nav class="navbar">
+    <a href="home/" >home</a>
+    <a href="shop/" >shop</a>
+    <a href="about/" >about</a>
+    <a href="team/" >team</a>
+    <a href="blog/" >blog</a>
+    <a href="contact/" >contact</a>
+</nav>
+
+<!-- shopping cart  -->
+
+<div class="shopping-cart">
+
+    <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="{% static 'image/1.jpg' %}" alt="">
+        <div class="content">
+            <h3>morden furniture</h3>
+            <span class="quantity"> 1 </span>
+            <span class="multiply"> x </span>
+            <span class="price"> $140.00 </span>
+        </div>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="{% static 'image/cart-img-2.jpg' %}" alt="">
+        <div class="content">
+            <h3>morden furniture</h3>
+            <span class="quantity"> 1 </span>
+            <span class="multiply"> x </span>
+            <span class="price"> $140.00 </span>
+        </div>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="{% static 'image/cart-img-3.jpg' %}" alt="">
+        <div class="content">
+            <h3>morden furniture</h3>
+            <span class="quantity"> 1 </span>
+            <span class="multiply"> x </span>
+            <span class="price"> $140.00 </span>
+        </div>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="{% static 'image/cart-img-4.jpg' %}" alt="">
+        <div class="content">
+            <h3>morden furniture</h3>
+            <span class="quantity"> 1 </span>
+            <span class="multiply"> x </span>
+            <span class="price"> $140.00 </span>
+        </div>
+    </div>
+
+    <h3 class="total"> total : <span>$560.00</span> </h3>
+
+    <a href="#" class="btn">checkout cart</a>
+
+</div>
+
+<!-- login form  -->
+
+<div class="login-form">
+
+    <form action="">
+        <h3>login form</h3>
+        <input type="email" placeholder="enter your email" class="box">
+        <input type="password" placeholder="enter your password" class="box">
+        <div class="remember">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me">remember me</label>
+        </div>
+        <input type="submit" value="login now" class="btn">
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">create now</a></p>
+    </form>
+
+</div>
+
+<!-- home section starts  -->
+
+<section class="home">
+
+    <div class="slides-container">
+
+        <div class="slide active">
+            <div class="content">
+                <!--span>yangiliklar</span-->
+                <h3>Yengil konstruksiyadagi <br>kochma dokonlar</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur quisquam, magnam enim sed debitis perspiciatis.</p>
+                <a href="https://smart-market.uz/product-detail/133280" class="btn">Online kreditga sotib olish</a>
+            </div>
+            <div class="image">
+                <img src="{% static 'image/otdelka2.jpg' %}" alt="">
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="content">
+                <span>yangiliklar</span>
+                <h3>Yengil konstruksiyadagi <br>kochma dokonlar</h3>
+                <p>TECHNOCITY ko`chma dokonlarini onlayn sotib uchun havola.</p>
+                <a href="https://smart-market.uz/product-detail/133280" class="btn">Onlayn buyurtma berish</a>
+            </div>
+            <div class="image">
+                <img src="{% static 'image/2.jpg' %}" alt="">
+            </div>
+        </div>
+
+    </div>
+
+    <!--div id="slide-next" onclick="next()" class="fas fa-angle-right"></div-->
+    <!--div id="slide-prev" onclick="prev()" class="fas fa-angle-left"></div-->
+
+</section>
+
+<!-- home section ends -->
+
+<!-- banner section starts  -->
+
+<section class="banner-container">
+
+    <div class="banner">
+        <img data-aos="zoom-in"  src="{% static 'image/newshop1.jpg' %}" alt="">
+        <div class="content">
+            <span data-aos="flip-left">Cheklangan taklif</span>
+            <h3 data-aos="flip-left"> 50% Gacha</h3>
+            <a data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" href="contact/" class="btn">Sotib olish</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img data-aos="zoom-in"  src="{% static 'image/625593328f134b069efd7e9d.jpg' %}" alt="">
+        <div class="content">
+            <span data-aos="flip-right">Cheklangan taklif</span>
+            <h3 data-aos="flip-right"> 50% Gacha</h3>
+            <a data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" href="contact/" class="btn">Sotib olish</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img data-aos="zoom-in" src="{% static 'image/Н.jpg' %}" alt="">
+        <div class="content">
+            <span data-aos="flip-left">Cheklangan taklif</span>
+            <h3 data-aos="flip-left"> 50% Gacha</h3>
+            <a data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" href="contact/" class="btn">Sotib olish</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img data-aos="zoom-in"  src="{% static 'image/Y.jpg' %}" alt="">
+        <div class="content">
+            <span data-aos="flip-left">Cheklangan taklif</span>
+            <h3 data-aos="flip-left"> 50% Gacha</h3>
+            <a data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" href="contact/" class="btn">Sotib olish</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img data-aos="zoom-in"  src="{% static 'image/GOLD 3.jpg' %}" alt="">
+        <div class="content">
+            <span data-aos="flip-right">Cheklangan taklif</span>
+            <h3 data-aos="flip-right"> 50% Gacha</h3>
+            <a data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" href="contact/" class="btn">Sotib olish</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img data-aos="zoom-in" src="{% static 'image/1.jpg' %}" alt="">
+        <div class="content">
+            <span data-aos="flip-left">Cheklangan taklif</span>
+            <h3 data-aos="flip-left"> 50% Gacha</h3>
+            <a data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" href="contact/" class="btn">Sotib olish</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img data-aos="zoom-in"  src="{% static 'image/COFFE1.jpg' %}" alt="">
+        <div class="content">
+            <span data-aos="flip-left">Cheklangan taklif</span>
+            <h3 data-aos="flip-left"> 50% Gacha</h3>
+            <a data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" href="contact/" class="btn">Sotib olish</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <img data-aos="zoom-in"  src="{% static 'image/M.jpg' %}" alt="">
+        <div class="content">
+            <span data-aos="flip-right">Cheklangan taklif</span>
+            <h3 data-aos="flip-right"> 50% Gacha</h3>
+            <a data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" href="contact/" class="btn">Sotib olish</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- banner section ends -->
+
+
+
+
+
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container" data-aos="fade-up">
+
+        <div class="box">
+            <h3>Sayt ichidagi <br> havolalar</h3>
+            <a data-aos="flip-left" href="{% url 'home' %}"> <i class="fas fa-arrow-right"></i> home</a>
+            <a data-aos="flip-right" href="{% url 'shop' %}"> <i class="fas fa-arrow-right"></i> Online dokon</a>
+            <a data-aos="flip-left" href="{% url 'about' %}"> <i class="fas fa-arrow-right"></i> about</a>
+            <a data-aos="flip-right" href="{% url 'team' %}"> <i class="fas fa-arrow-right"></i> team</a>
+            <a data-aos="flip-left" href="{% url 'blog' %}"> <i class="fas fa-arrow-right"></i> blog</a>
+            <a data-aos="flip-right" href="{% url 'contact' %}"> <i class="fas fa-arrow-right"></i> Zakaz berish</a>
+        </div>
+
+        <div class="box">
+            <h3>Biz bilan boglanish</h3>
+            <a data-aos="flip-left" href="#"> <i class="fab fa-facebook-f"></i> facebook</a>
+            <a data-aos="flip-right" href="https://t.me/TECHNOCITYMCHJ"> <i class="fab fa-telegram"></i> telegram</a>
+            <a data-aos="flip-left" href="#"> <i class="fab fa-instagram"></i> instagram</a>
+            <a data-aos="flip-left" href="#"> <!--i class="fab fa-phone"></i--> +998 95-401-75-57</a>
+            <a data-aos="flip-left" href="#"> <!--i class="fab fa-phone"></i--> +998 90-778-75-57</a>
+        </div>
+    <div class="box">
+             <h3>Qo'shimcha havolalar</h3>
+            <a href="https://smart-market.uz/product-detail/133280"> <i class="fas fa-arrow-right"></i> Savdo maydoni</a>
+            <a href="https://smart-market.uz/product-detail/133280"> <i class="fas fa-arrow-right"></i> Kreditga olish</a>
+        </div>
+        <div class="box">
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="credit">
+</section>
+
+<!-- custom js file link  -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+<script type="text/javascript">
+    AOS.init();
+</script>
+    
+</body>
+</html>
