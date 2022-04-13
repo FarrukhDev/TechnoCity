@@ -1,6 +1,6 @@
 from django.urls import path, include
 from .views import *
-from asosiy.views import Home,About,Contact,Shop,Blog,Team
+from asosiy.views import Home,About,Contact,Shop,Blog,Team,Muvaffaqiyat
 
 urlpatterns = [
     path('',Home.as_view(),name = 'home'),
@@ -9,4 +9,5 @@ urlpatterns = [
     path('shop/',Shop.as_view(),name = 'shop'),
     path('team/',Team.as_view(),name = 'team'),
     path('blog/',Blog.as_view(),name = 'blog'),
+    path('muva/',Muvaffaqiyat.as_view(),name = 'muva'),
 ]

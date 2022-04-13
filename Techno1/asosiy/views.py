@@ -23,7 +23,7 @@ class Contact(View):
             tel_raqam = request.POST['tel_raqam'],
             qoshimcha = request.POST['qoshimcha']
         )
-        return redirect('home')
+        return redirect('muva')
 
 class Shop(View):
     def get(self,request):
@@ -36,3 +36,7 @@ class Team(View):
 class Blog(View):
     def get(self,request):
         return render(request,'blog.html')
+
+class Muvaffaqiyat(View):
+    def get(self,request):
+        return render(request,'button.html')
